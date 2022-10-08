@@ -361,3 +361,15 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/RulesEgnine.WebApp/Demo.db-wal
+/RulesEgnine.WebApp/Demo.db-shm
+/RulesEgnine.WebApp/Demo.db
+/RulesEgnine.WebApp/Demo.db
+/RulesEgnine.WebApp/Demo.db
+/RulesEgnine.WebApp/Demo.db-wal
+/RulesEgnine.WebApp/Demo.db-shm
+/RulesEgnine.WebApp/Demo.db
+/RulesEgnine.WebApp/Demo.db
+/RulesEngine.WebApp/Demo.db-wal
+/RulesEngine.WebApp/Demo.db-shm
+/RulesEngine.WebApp/Demo.db

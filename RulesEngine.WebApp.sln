@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.32916.344
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RulesEgnine.WebApp", "RulesEgnine.WebApp\RulesEgnine.WebApp.csproj", "{64C7F120-C5BE-4B5C-9A34-58D720822A08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RulesEngine.WebApp", "RulesEngine.WebApp\RulesEngine.WebApp.csproj", "{64C7F120-C5BE-4B5C-9A34-58D720822A08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

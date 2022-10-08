@@ -30,16 +30,19 @@ namespace RulesEngine.WebApp.engine.factory.product
         public void Add(T entity)
         {
             dbContext.Set<T>().Add(entity);
+            dbContext.SaveChanges();
         }
 
         public void Update(T entity)
         {
             dbContext.Set<T>().Update(entity);
+            dbContext.SaveChanges();
         }
 
         public void Delete(T entity)
         {
             dbContext.Set<T>().Remove(entity);
+            dbContext.SaveChanges();
         }
 
         public Task<IEnumerable<T>> GetAllAsync()
