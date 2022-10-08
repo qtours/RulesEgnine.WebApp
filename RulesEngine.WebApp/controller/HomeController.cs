@@ -29,7 +29,7 @@ namespace RulesEgnine.WebApp.controller
         }
 
         [HttpPost]
-        public IActionResult CreateWorkflow(Workflow workflow)
+        public IActionResult CreateWorkflow()
         {
             var lstRule = new List<Rule> 
             {
@@ -41,7 +41,7 @@ namespace RulesEgnine.WebApp.controller
                     Expression = "input1.loyaltyFactor > 3"
                 },
             };
-            workflow = new Workflow
+            var workflow = new Workflow
             {
                 WorkflowName = "Discount",
                 Rules = lstRule
