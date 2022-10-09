@@ -1,11 +1,7 @@
-﻿
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Newtonsoft.Json;
+﻿using Microsoft.AspNetCore.Mvc;
 using RulesEngine.Models;
 using RulesEngine.WebApp.engine.factory;
 using RulesEngine.WebApp.engine.factory.product;
-using System.Linq.Expressions;
 
 namespace RulesEgnine.WebApp.controller
 {
@@ -14,8 +10,8 @@ namespace RulesEgnine.WebApp.controller
     [ApiController]
     public class HomeController : Controller
     {
-        IRuleRepository Rule { get; }
-        IWorkflowRepository Workflow { get; }
+        private IRuleRepository Rule { get; }
+        private IWorkflowRepository Workflow { get; }
 
         public HomeController(EngineFactory engineFactory)
         {
@@ -31,7 +27,7 @@ namespace RulesEgnine.WebApp.controller
         [HttpPost]
         public IActionResult CreateWorkflow()
         {
-            var lstRule = new List<Rule> 
+            var lstRule = new List<Rule>
             {
                 new Rule
                 {

@@ -1,7 +1,6 @@
 ﻿// Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-using Microsoft.EntityFrameworkCore;
 using RulesEngine.WebApp.engine.rulesengine;
 
 namespace RulesEngine.WebApp.engine.factory

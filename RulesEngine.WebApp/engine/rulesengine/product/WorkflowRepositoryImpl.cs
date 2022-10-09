@@ -2,13 +2,8 @@
 // Licensed under the MIT License.
 
 using Microsoft.EntityFrameworkCore;
-using RulesEngine.WebApp.engine.factory.product;
 using RulesEngine.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using RulesEngine.WebApp.engine.factory.product;
 
 namespace RulesEngine.WebApp.engine.rulesengine.product
 {

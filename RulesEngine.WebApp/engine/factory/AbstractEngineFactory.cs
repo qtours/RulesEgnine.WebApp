@@ -3,10 +3,8 @@
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
-using Microsoft.Extensions.Options;
 using RulesEngine.Models;
 using RulesEngine.WebApp.engine.factory.product;
-using System;
 using System.Text.Json;
 
 namespace RulesEngine.WebApp.engine.factory
@@ -51,7 +49,8 @@ namespace RulesEngine.WebApp.engine.factory
             modelBuilder.Entity<ScopedParam>()
               .HasKey(k => k.Name);
 
-            modelBuilder.Entity<Workflow>(entity => {
+            modelBuilder.Entity<Workflow>(entity =>
+            {
                 entity.HasKey(k => k.WorkflowName);
                 entity.Ignore(b => b.WorkflowsToInject);
             });
@@ -60,7 +59,8 @@ namespace RulesEngine.WebApp.engine.factory
 
             var serializationOptions = new JsonSerializerOptions(JsonSerializerDefaults.General);
 
-            modelBuilder.Entity<Rule>(entity => {
+            modelBuilder.Entity<Rule>(entity =>
+            {
                 entity.HasKey(k => k.RuleName);
 
                 var valueComparer = new ValueComparer<Dictionary<string, object>>(

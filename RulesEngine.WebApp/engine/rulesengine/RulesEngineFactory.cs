@@ -1,19 +1,9 @@
 ﻿// Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
-using RulesEngine.Models;
 using RulesEngine.WebApp.engine.factory;
 using RulesEngine.WebApp.engine.factory.product;
 using RulesEngine.WebApp.engine.rulesengine.product;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
 
 namespace RulesEngine.WebApp.engine.rulesengine
 {
