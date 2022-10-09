@@ -32,7 +32,7 @@ namespace RulesEngine.WebApp.engine.rulesengine
         /// 构造方法
         /// </summary>
         /// <param name="dbType">数据库类型</param>
-        public RulesEngineFactory(DbType dbType) : base(dbType)
+        public RulesEngineFactory()
         {
             RuleRepository = new RuleRepositoryImpl(this);
             WorkflowRepository = new WorkflowRepositoryImpl(this);

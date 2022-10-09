@@ -1,6 +1,7 @@
 ﻿// Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
+using Microsoft.EntityFrameworkCore;
 using RulesEngine.WebApp.engine.rulesengine;
 
 namespace RulesEngine.WebApp.engine.factory
@@ -20,15 +21,7 @@ namespace RulesEngine.WebApp.engine.factory
         /// </summary>
         public EngineFactory()
         {
-            DbFactory = new RulesEngineFactory(DbType.Sqlite);
-        }
-
-        /// <summary>
-        /// 带参数构造方法，用于依赖注入时，指定数据库类型
-        /// </summary>
-        public EngineFactory(DbType dbType)
-        {
-            DbFactory = new RulesEngineFactory(dbType);
+            DbFactory = new RulesEngineFactory();
         }
     }
 }
